@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class SolutionConcurrency {
 
     private volatile Integer valueSolution = 0;
-    volatile static AtomicBoolean atomicBoolean = new AtomicBoolean(true);
+    static AtomicBoolean atomicBoolean = new AtomicBoolean(true);
 
     public void set(int value) {
         if (valueSolution == 0) {
